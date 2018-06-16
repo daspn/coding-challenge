@@ -7,10 +7,6 @@ buildscript {
     }
 }
 
-plugins {
-    id 'net.ltgt.apt' version '0.10'
-}
-
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -36,6 +32,4 @@ dependencies {
     testCompile("org.springframework.boot:spring-boot-starter-test")
 
     compileOnly 'org.projectlombok:lombok:1.18.0'
-    apt "org.projectlombok:lombok:1.18.0"
 }
-
